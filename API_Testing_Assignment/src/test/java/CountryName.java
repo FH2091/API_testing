@@ -9,9 +9,9 @@ GetInfo info=new GetInfo();
 	public void testNullName() {
 		assertNotNull(" The countryName is not null ",info.CountryName());
 	}
-
+	@Test
 	public void testSameCountry() {
-		assertEquals("The Country Name is Egypt ", info.CountryName());
+		assertEquals("Egypt", info.CountryName());
 		
 	}
 }
