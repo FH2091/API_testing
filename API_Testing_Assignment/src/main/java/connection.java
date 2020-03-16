@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import org.json.JSONObject;
 public class connection {
-
+	static StringBuffer response = new StringBuffer();
 public static void call_me() throws Exception {
 
     
@@ -33,13 +33,18 @@ public static void call_me() throws Exception {
      BufferedReader in = new BufferedReader(
              new InputStreamReader(con.getInputStream()));
      String inputLine;
-     StringBuffer response = new StringBuffer();
+     //StringBuffer response = new StringBuffer();
      while ((inputLine = in.readLine()) != null) {
      	response.append(inputLine);
      }
      in.close();
-    
-     System.out.println(response.toString());
+     
+   
+    	 
+     }
+public String getresponse() {
+	 return response.toString();
+  // System.out.println(response.toString());
     
  
    
