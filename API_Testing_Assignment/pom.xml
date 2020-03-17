@@ -18,10 +18,23 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-
-
     
-    <!-- ... -->
+    <dependency>
+    <groupId>com.sun.net.httpserver</groupId>
+    <artifactId>http</artifactId>
+    <version>20070405</version>
+    
+</dependency>
+<dependency>
+	<groupId>com.weicoder</groupId>
+	<artifactId>http</artifactId>
+	<version>3.3.1</version>
+</dependency>
+
+
+
+
+
     
 </dependencies>
 </project>

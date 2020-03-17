@@ -33,7 +33,7 @@ public static void call_me() throws Exception {
      BufferedReader in = new BufferedReader(
              new InputStreamReader(con.getInputStream()));
      String inputLine;
-     //StringBuffer response = new StringBuffer();
+    
      while ((inputLine = in.readLine()) != null) {
      	response.append(inputLine);
      }
@@ -44,7 +44,7 @@ public static void call_me() throws Exception {
      }
 public String getresponse() {
 	 return response.toString();
-  // System.out.println(response.toString());
+  
     
  
    
