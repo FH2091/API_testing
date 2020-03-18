@@ -10,16 +10,16 @@ public class APImain {
 	public static void main(String[] args) throws IOException {
 	     try {
 	        connect.call_me();
-	       //  info.CountryName(); 
-	      //  info.CapitalName();    
-	      //  info.population(); 
 	        } catch (Exception e) {
 	         e.printStackTrace();
 	       }
 	     
 	     HttpServer server = HttpServer.create(new InetSocketAddress(8000), 0);
 			server.createContext("/test", new MyHandler());
-			server.setExecutor(null); // creates a default executor
+			server.setExecutor(null); 
 			server.start();
 	     }
+	
+	
+	
 }

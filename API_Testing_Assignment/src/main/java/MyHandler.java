@@ -10,6 +10,8 @@ import com.sun.net.httpserver.HttpServer;
 
 public class MyHandler implements HttpHandler {
 	connection s=new connection();	
+	
+	
 	  public void handle(HttpExchange t) throws IOException {
           String response = s.getresponse();
           

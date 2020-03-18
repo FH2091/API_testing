@@ -31,23 +31,22 @@ public static void call_me() throws Exception {
      System.out.println("\n Sending a request to API : " + spec);
      System.out.println("Response Code : " + responseCode);
      BufferedReader in = new BufferedReader(
-             new InputStreamReader(con.getInputStream()));
+       new InputStreamReader(con.getInputStream()));
      String inputLine;
     
      while ((inputLine = in.readLine()) != null) {
      	response.append(inputLine);
      }
+     
      in.close();
      
    
     	 
      }
+
 public String getresponse() {
 	 return response.toString();
-  
-    
- 
-   
+
    }
 
 

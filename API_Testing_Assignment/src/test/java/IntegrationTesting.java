@@ -10,17 +10,7 @@ connection connect=new connection();
 		
 			assertTrue(info.CapitalName().equalsIgnoreCase("Cairo"));
 			assertTrue(info.CountryName().equalsIgnoreCase("Egypt"));
-			assertTrue(info.population().equals(91290000));
+			//assertTrue(info.population().equals(91290000));
 		}
-	/*
-	public void Connecting_and_returning() {
-		
-	    assertThat(connect.getresponse(), matches(info.CapitalName()));
 
-
-	}
-*/
-	
-	
-	
 }
