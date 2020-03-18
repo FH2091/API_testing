@@ -12,12 +12,13 @@ public class Population {
 		assertFalse(info.population()>1268301605);
 	}
 	public void testfailRange2() {
-		assertTrue(800<info.population());
+		assertFalse(800<info.population());
 	}
 	
-	public void testfailRange3() {
-		assertTrue(-1<info.population());
-	}
+//	public void testfailRange3() {
+//		assertTrue(-1<info.population());
+//	}
+	
 	
 	
 	/*public void CorrectRange() {
@@ -34,18 +35,18 @@ public class Population {
 	
 	*/
 	
-	public void CorrectRange1() {
-		assertTrue(800 <= 1000 && 1000 <= 1268301605);
+	//public void CorrectRange1() {
+	//	assertTrue(800 <= info.population() && info.population()<= 1268301605);
 			
-		}
+	//	}
 	
 	
 	
 	
 	
-	public void CorrectRange2() {
-		assertEquals(10000,1268301605,1.0);
-	}
+	//public void CorrectRange2() {
+	//	assertEquals(,1268301605,1.0);
+//	}
 	
 	public void testNotNull() {
 		assertNotNull(info.population());
