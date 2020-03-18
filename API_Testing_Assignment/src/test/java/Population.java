@@ -7,14 +7,14 @@ public class Population {
 	@Test
 	public void testfailPopulation() {
 		assertFalse(info.population()<0);
-	}
+	}@Test
 	public void testfailRange() {
 		assertFalse(info.population()>1268301605);
-	}
+	}@Test
 	public void testfailRange2() {
 		assertTrue(800<info.population());
 	}
-	
+	@Test
 	public void testfailRange3() {
 		assertTrue(-1<info.population());
 	}
@@ -33,7 +33,7 @@ public class Population {
             Matcher<T> (800,12))68301605
 	
 	*/
-	
+	@Test
 	public void CorrectRange1() {
 		assertTrue(800 <= 1000 && 1000 <= 1268301605);
 			
@@ -42,11 +42,11 @@ public class Population {
 	
 	
 	
-	
+	@Test
 	public void CorrectRange2() {
 		assertEquals(10000,1268301605,1.0);
 	}
-	
+	@Test
 	public void testNotNull() {
 		assertNotNull(info.population());
 		

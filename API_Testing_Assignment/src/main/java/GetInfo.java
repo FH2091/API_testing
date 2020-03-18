@@ -16,6 +16,14 @@ public class GetInfo {
 		return CountryName;
 	}
 
+	public boolean integrationtest4() {
+		CountryName();
+	    CapitalName ();
+		return true; 	
+	}
+	
+	
+	
 	public Long population() {
 		Long population= myResponse.getLong("population");
 		    

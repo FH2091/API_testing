@@ -9,9 +9,14 @@ GetInfo info=new GetInfo();
 	public void testNull() {
 		assertNull("Capital Name is null ",info.CapitalName());
 	}
-
+	@Test
 	public void testpass() {
 		assertEquals("Capital Name is Cairo",info.CapitalName());
+	}
+	
+	@Test
+	public void testpass2() {
+		assertEquals("Cairo",info.CapitalName());
 	}
 	
 }

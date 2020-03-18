@@ -23,6 +23,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="E:/collage programs setup/json setup testing/New folder/http-20070405.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

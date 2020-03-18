@@ -9,6 +9,7 @@ import java.util.Scanner;
 import org.json.JSONObject;
 public class connection {
 	static StringBuffer response = new StringBuffer();
+	
 public static void call_me() throws Exception {
 
     
@@ -39,16 +40,18 @@ public static void call_me() throws Exception {
      }
      in.close();
      
-   
+    // System.out.println(response.toString());
     	 
+     
      }
-public String getresponse() {
-	 return response.toString();
-  // System.out.println(response.toString());
-    
- 
-   
-   }
+  
+
+
+   public String getresponse() {
+	   	   
+    return response.toString();
+	 
+  }
 
 
 }

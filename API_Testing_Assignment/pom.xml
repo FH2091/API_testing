@@ -11,7 +11,11 @@
         <version>20160810</version>
     </dependency>
  
- 
+ <dependency>
+	<groupId>com.weicoder</groupId>
+	<artifactId>http</artifactId>
+	<version>3.3.1</version>
+</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
