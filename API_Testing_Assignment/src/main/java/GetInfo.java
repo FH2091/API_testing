@@ -22,13 +22,6 @@ public class GetInfo {
 		    return population;
 		
 	}
-	public boolean CountryName_CapitalName() {
-		CountryName();
-	    CapitalName ();
-		return true; 	
-	}
-	
-	
 	
 	
 	

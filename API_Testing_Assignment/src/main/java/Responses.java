@@ -4,7 +4,7 @@ import org.json.JSONObject;
 public class Responses {
 
 	
-	
+
 
 
 	GetInfo info=new GetInfo();
@@ -43,44 +43,7 @@ public class Responses {
 			
 			
 		}
-	  /*public String Integration_for_output4() {
-		Integration_for_output1();
-		Integration_for_output2();
-		Integration_for_output3();
-			String CapitalInfo = "Capital of " + info.CapitalName() + " and the current population is "  +info.population();
-			return CapitalInfo;
-		}*/
 		
-	  
-	  
-	  
-	  
-	  
-
-
-
-		
-		/*public void GET_capital()
-	    {
-	    
-			 System.out.println("capital of " +info.CapitalName());
-	    }
-		
-		
-		public void GET_population()
-	    {
-			
-			 System.out.println(" and population of " +info.population());
-					
-	        
-	    }
-		public void Get_country_name()
-	    {
-	    	
-			 System.out.println("the country name is " +info.CountryName());
-
-	    }
-		*/
 		
 		
 		

@@ -8,49 +8,27 @@ public class Population {
 	public void testfailPopulation() {
 		assertFalse(info.population()<0);
 	}
+	@Test
 	public void testfailRange() {
 		assertFalse(info.population()>1268301605);
 	}
+	@Test
 	public void testfailRange2() {
-		assertFalse(800<info.population());
+		assertTrue(800<info.population());
 	}
 	
-//	public void testfailRange3() {
-//		assertTrue(-1<info.population());
-//	}
-	
-	
-	
-	/*public void CorrectRange() {
+	@Test
+	public void testValidRange() {
 		
-		assertThat(new Long(connect.population())).isBetween(800,1268301605 );
-	}*/
+	assertTrue(info.population()<1268301605);
+}
 	
-	
-	
-	
-	/*public static <T> void assertThat(String reason,
-            T 2000,
-            Matcher<T> (800,12))68301605
-	
-	*/
-	
-	//public void CorrectRange1() {
-	//	assertTrue(800 <= info.population() && info.population()<= 1268301605);
-			
-	//	}
-	
-	
-	
-	
-	
-	//public void CorrectRange2() {
-	//	assertEquals(,1268301605,1.0);
-//	}
+@Test
 	
 	public void testNotNull() {
 		assertNotNull(info.population());
 		
 	}
+	
 	
 }

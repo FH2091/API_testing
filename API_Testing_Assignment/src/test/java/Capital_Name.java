@@ -2,24 +2,36 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.sun.tools.javac.util.Assert;
+// import com.sun.tools.javac.util.Assert;
+
 
 public class Capital_Name {
 
-GetInfo info=new GetInfo();
+	
+	GetInfo info=new GetInfo();
 	@Test
 	public void testNull() {
 		assertNotNull("Capital Name is null ",info.CapitalName());
 	}
 
-	public void testpass() {
-		assertEquals("Cairo",info.CapitalName());
-
+	@Test
+	public void testCorrectName() {
+         assertEquals("Cairo",info.CapitalName());        
 	}
-	//public void StartWith() {
+	
+	
+	
+	@Test
+	public void testEndLetter() {
+		assertTrue(info.CapitalName().endsWith("o"));
+	}
+	
+	@Test
+	
+	public void TestStartLetter() {
 		
-	//	Assert.check(true, info.CapitalName().compareTo("Cairo"));
-	//	
-	// }
+	assertTrue(info.CapitalName().contains("a"));
+	
+	 }
 	
 }
