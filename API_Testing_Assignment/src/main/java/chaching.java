@@ -15,7 +15,6 @@ public class chaching {
 	
 	 public static void  switch_to_json() throws IOException { 
 
-		 System.out.println(connection.getresponse());
 	     String Str=connection.getresponse();
 	     String jsonn=Str.substring(1, Str.length()-1);
 	     System.out.println(jsonn);
@@ -23,7 +22,6 @@ public class chaching {
 	     String name = (String)js.get("name");
 	     String capital = (String)js.get("capital");
 	     long population = ((Number) js.get("population")).longValue();
-	  // Long population1 = (Long)js.get("population");
 	     String population1 = Long.toString(population);
 	     String all[]= {name,capital,population1};
 	      write(all);
@@ -33,18 +31,14 @@ public class chaching {
 		
 
 		        FileWriter writeer = new FileWriter("db.txt", true);
-
-		           	        
+        
 		            writeer.write(array[0]);
 		            writeer.write("\n");
 		            writeer.write(array[1]);
 		            writeer.write("\n");
 		            writeer.write(array[2]);
 		            writeer.write("\n");
-                   
-		        
-
-		        writeer.close();
+		            writeer.close();
 
 		    }
 	 
@@ -63,12 +57,9 @@ public class chaching {
 	        String line2;
 	        String line1;
 	        String line3;
-
-	     
-
 	            while ((line1 = bufferedReader.readLine()) != null & (line2 = bufferedReader.readLine()) != null & (line3 = bufferedReader.readLine()) != null) {
 
-	                if (line1.equals(Name) ) {
+	                if (line1.equalsIgnoreCase(Name) ) {
 
 	                    aExists = true;
 
@@ -78,9 +69,11 @@ public class chaching {
 	            
 
 	            if (aExists) {
-	                System.out.println(line1);
-	                System.out.println(line2);
-	                System.out.println(line3);
+	            	//String info=line1+line2+line3;
+	            	//  org.json.JSONObject js=new org.json.JSONObject(info);
+	             //  System.out.println(js);
+	                System.out.println("{name:"+line1+",capital:"+line2+",population:"+line3+"}");
+	                //System.out.println(line3);
 	                
 	            } else {
 	                connection.call_me(Name);
