@@ -4,7 +4,7 @@ import org.json.JSONObject;
 public class Responses {
 
 	
-
+/*
 
 
 	GetInfo info=new GetInfo();
@@ -49,5 +49,6 @@ public class Responses {
 		
 	}
 
-	
+	*/
 
+}

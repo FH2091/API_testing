@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class Response {
+public class Response {/*
 	Integration_functions Integration_functions =new Integration_functions();
 	Responses IntegrationTesting=new Responses();
 	GetInfo info=new GetInfo();
@@ -34,5 +34,5 @@ public class Response {
 		
 		 
 
-	
+	*/
 }
