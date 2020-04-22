@@ -8,18 +8,24 @@ import java.util.Scanner;
 
 import org.json.JSONObject;
 public class connection {
-	static StringBuffer response = new StringBuffer();
-public static void call_me() throws Exception {
+	
+   static StringBuffer response = new StringBuffer();	
+	public static String getname() {
+
+	 System.out.println("enter the country name : ");
+	 Scanner sc= new Scanner(System.in); 
+	 String country= sc.nextLine();
+	return country;
+	 
+	}
+	 
+public static void call_me(String country) throws Exception {
 
     
- System.out.println("enter the country name : ");
- 	
- 
- Scanner sc= new Scanner(System.in); 
- String country= sc.nextLine();
- 
+
+   //  String country =getname();
      String f="https://restcountries.eu/rest/v2/name/";
-    String spec =f+country+ "?fields=name;capital;population";
+     String spec =f+country+ "?fields=name;capital;population";
      
      URL obj = new URL(spec);
      HttpURLConnection con = (HttpURLConnection) obj.openConnection();
