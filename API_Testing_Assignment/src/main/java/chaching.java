@@ -31,18 +31,14 @@ public class chaching {
 		
 
 		        FileWriter writeer = new FileWriter("db.txt", true);
-
-		           	        
+        
 		            writeer.write(array[0]);
 		            writeer.write("\n");
 		            writeer.write(array[1]);
 		            writeer.write("\n");
 		            writeer.write(array[2]);
 		            writeer.write("\n");
-                   
-		        
-
-		        writeer.close();
+		            writeer.close();
 
 		    }
 	 
@@ -61,9 +57,6 @@ public class chaching {
 	        String line2;
 	        String line1;
 	        String line3;
-
-	     
-
 	            while ((line1 = bufferedReader.readLine()) != null & (line2 = bufferedReader.readLine()) != null & (line3 = bufferedReader.readLine()) != null) {
 
 	                if (line1.equalsIgnoreCase(Name) ) {
