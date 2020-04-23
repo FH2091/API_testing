@@ -4,7 +4,7 @@ import org.json.JSONObject;
 public class Responses {
 
 	
-/*
+
 
 
 	GetInfo info=new GetInfo();
@@ -37,18 +37,17 @@ public class Responses {
 		{
 			
 			connection Connection=new connection();
-			connection.call_me();
+			connection.call_me("Egypt");
 			String name =myResponse.getString("name");
 			return name;
 			
 			
 		}
 		
-		
+	
 		
 		
 	}
 
-	*/
+	
 
-}
