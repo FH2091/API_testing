@@ -46,7 +46,7 @@ public class Main_Menu {
 		{
 		    case 1:
 		    System.out.println ( "You picked option 1 \n" );
-		    cache.Read(Country);
+		   System.out.println( cache.Read(Country));
 		    question();
 		    break;
 	  
