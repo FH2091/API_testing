@@ -43,7 +43,7 @@ public class All_cached_data {
 		        
 
 		        writeer.close();
-
+		       
 		    }
 	 
 	 
@@ -51,7 +51,7 @@ public class All_cached_data {
 	 
 	 
 	 
-	 public void Read(String Name) throws Exception {
+	 public String Read(String Name) throws Exception {
 
              boolean aExists=false;
 	        BufferedReader bufferedReader;
@@ -79,13 +79,16 @@ public class All_cached_data {
 	            	//String info=line1+line2+line3;
 	            	//  org.json.JSONObject js=new org.json.JSONObject(info);
 	             //  System.out.println(js);
-	                System.out.println("{name:"+line1+",capital:"+line2+",population:"+line3+"}");
+	            	String answer="{name:"+line1+",capital:"+line2+",population:"+line3+"}";
+	            	return answer;
+	                
 	                //System.out.println(line3);
 	                
 	            } else {
-	                connection.call_me(Name);
+	              String answer2=  connection.call_me(Name);
 	               String STR= Response();
-	                switch_to_json(STR);
+	               switch_to_json(STR);
+	               return answer2;
 	            }
 		 
 	 

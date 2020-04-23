@@ -35,7 +35,7 @@ public class connection {
 			return inputLine;
 	}
 	
-	public static void call_me(String country) throws Exception {
+	public static String call_me(String country) throws Exception {
      String spec=Bind_Url(country);
      URL obj = new URL(spec);
      HttpURLConnection con = (HttpURLConnection) obj.openConnection();
@@ -47,10 +47,13 @@ public class connection {
      System.out.println("\n Sending a request to API : " + spec);
      System.out.println("Response Code : " + responseCode);
      Read_From_API(con);
+     String ans=getresponse();
+     return ans;
+    
    
      }
 
-public String getresponse() {
+public static String getresponse() {
 	 return response.toString();
 
    }
