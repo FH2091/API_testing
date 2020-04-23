@@ -11,18 +11,10 @@ import org.json.JSONObject;
 public class connection {
 	
    static StringBuffer response = new StringBuffer();	
-	public static String getname() {
+	
 
-	 System.out.println("enter the country name : ");
-	 Scanner sc= new Scanner(System.in); 
-	 String country= sc.nextLine();
-	return country;
-	 
-	}
-	 
-
-	public static String Bind_Url() {
-		String country=getname();
+	public static String Bind_Url(String country) {
+		//String country=getname();
 	   String f="https://restcountries.eu/rest/v2/name/";
 	     String spec =f+country+ "?fields=name;capital;population";
 		return spec;
@@ -44,7 +36,7 @@ public class connection {
 	}
 	
 	public static void call_me(String country) throws Exception {
-     String spec=Bind_Url();
+     String spec=Bind_Url(country);
      URL obj = new URL(spec);
      HttpURLConnection con = (HttpURLConnection) obj.openConnection();
   
